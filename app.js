@@ -3,15 +3,16 @@ const path = require('path');
 const hbs = require('hbs');
 
 // set the port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5050;
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/public')));//looks for assets in public folder
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', require('./routes/index'));
+//only change made above
 
 app.listen(port, () => {
     console.log(`app is running on ${port}`);
