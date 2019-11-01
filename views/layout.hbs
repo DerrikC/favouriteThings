@@ -9,19 +9,40 @@
     <!-- css stuff -->
     <!-- link to reset -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <title>Favourite Things | Food</title>
 </head>
 
 <body>
-    <h1>Fun with Modules!</h1>
+    <div class="hook-content">
+           {{!-- <div id="slider">
+
+     <figure>
+       <img src="images/burger.jpeg" class="burger" alt="burger">
+       <img src="images/lasagna.jpeg" class="lasagna" alt="lasagna">
+       <img src="images/padthai.jpeg" class="padthai" alt="padthai">
+     </figure>
+   </div> --}}
+
+    <img src="images/burger.jpeg" class="burger" alt="burger">
+    <img src="images/foodLogo.svg" class="food-logo" alt="food-logo">
+
+    <div class="headerTitles">
+    <h1 class="p-name">Favourite Things</h1>
+    <h2 class="subtitle">Personalized Recipes</h2>
+    </div>
+
+    </div>
+
+
+
     <nav data-module="nav">
         <!-- nav elements must have nav-item -->
         <ul>
             <li><a href="#" class="nav-item">1</a></li>
             <li><a href="/2" class="nav-item">2</a></li>
             <li><a href="#section3" class="nav-item">3</a></li>
-            <li><a href="#section4" class="nav-item">4</a></li>
-            <li><a href="#section5" class="nav-item">5</a></li>
         </ul>
     </nav>
 
@@ -30,14 +51,12 @@
     </main>
 
     <footer>
-        <p>here's some footer text</p>
+        <p> derrikxavier © 2019</p>
 
         <ul>
             <li><a href="#" class="nav-item">1</a></li>
             <li><a href="/2" class="nav-item">2</a></li>
             <li><a href="#section3" class="nav-item">3</a></li>
-            <li><a href="#section4" class="nav-item">4</a></li>
-            <li><a href="#section5" class="nav-item">5</a></li>
         </ul>
     </footer>
 
@@ -45,11 +64,11 @@
 
     <script type="module" src="js/main.js"></script>
     <script>
-        var name = "Justin";
+        var name = "Favourite Things";
 
         console.log('name in main file: ' + name);
     </script>
-
+s
     <!-- templates -> these don't get rendered immediately -->
     <template id="user-template">
         <!-- you can put all kinds of markup here - semantic tagging, etc -->

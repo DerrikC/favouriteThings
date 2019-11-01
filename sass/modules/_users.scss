@@ -9,15 +9,21 @@
         text-align: center;
         padding: 8px;
 
-        .u-avatar { max-width: 200px; }
+        .u-avatar { max-width: 200px; 
+            -webkit-clip-path: inset(0px round 5px 5px 5px 5px);
+            clip-path: inset(0px round 5px 5px 5px 5px);
+        
+        }
 
         .u-link { 
             display: block; 
-            //width: 150px;  
+            font-family: Helvetica, Arial, sans-serif;
             text-decoration: none;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 5px;
+            margin: 20px;
+            background-color: #2A7A41;
+            padding: 10px;
+            border-radius: 25px;
+            color: white;
         }
 
         h1, h3 { margin: 5px 0; }

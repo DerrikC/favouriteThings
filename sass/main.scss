@@ -2,18 +2,28 @@
 @import 'modules/_navbar';
 @import 'modules/_users';
 @import 'modules/_lightbox';
+@import 'modules/_header';
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body { 
     color: $main-color;
     background-color: $body-bg;
+
 }
 
 h1, h2, h3 { color: $heading-color }
 
+h1 { font-size: 25px;}
+h2 { font-size: 16px;}
+h4 { color: #2A7A41; padding: 25px; font-family: Helvetica, Arial, sans-serif;}
+
 .panel { min-height: 80vh; }
 
 .panel:nth-child(odd) {
-    background-color: salmon;
+    background-color: #ECF4F0;
     color: white;
 }
 
