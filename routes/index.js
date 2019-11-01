@@ -7,7 +7,7 @@ router.get('/', (req, res) => { //res making a request of the server
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
-    let query = "SELECT ID, avatar, Name, Logo, JobTitle FROM tbl_card";
+    let query = "SELECT ID, foodImage, foodName, calories FROM tbl_favthings"; //change if needed!!!!!!
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
@@ -25,7 +25,7 @@ console.log('hit a dynamic route!');
 console.log(req.params.id); // 1, 2 3 or wahtever you want to come after the slash
 
 //added another query
-let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`;
+let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`; //change if needed!!!!!!!!!
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }

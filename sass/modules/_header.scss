@@ -1,0 +1,46 @@
+
+.hook-content {
+    display: flex;
+}
+
+.food-logo {
+    padding: 0px 10px 20px 20px;
+    display: flex;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.burger {
+    display: absolute;
+    z-index: -1;
+    width: 100%;
+    -webkit-clip-path: inset(0px round 0px 0px 150px 0px);
+    clip-path: inset(0px round 0px 0px 150px 0px);
+}
+
+.headerTitles {
+    display: flex;
+    position: absolute;
+    margin-top: 30%;
+    padding: 20px;
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+.p-name {
+    display: flex;
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+
+.subtitle {
+    display: flex;
+    margin-top: 40%;
+    color: white;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-weight: 200;
+    padding: 10px 10px 10px 0px;
+}
