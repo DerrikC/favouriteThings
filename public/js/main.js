@@ -5,9 +5,9 @@ const myVM = (() => {
     let userButtons = document.querySelectorAll('.u-link'),
         lightbox = document.querySelector('.lightbox');
 
-        function renderSocialMedia(socialMedia) {
+        function renderCooktime(cookTime) {
             return `<ul class="u-social">
-                        ${socialMedia.map(item => `<li>${item}</li>`).join('')}
+                        ${cookTime.map(item => `<li>${item}</li>`).join('')}
                     </ul>`
         }
 
@@ -16,9 +16,9 @@ const myVM = (() => {
                 targetImg = lightbox.querySelector('img');
             
                 let bioContent = `
-                <p>${food.bio}</p>
+                <p>${food.ingredients}</p>
                 <h4>Cooktime:</h4>
-                ${renderSocialMedia(food.social)}
+                ${renderCooktime(food.cooktime)}
                 `;
 
                 console.log(bioContent);
