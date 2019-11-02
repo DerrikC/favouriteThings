@@ -15,7 +15,7 @@ router.get('/', (req, res) => { //res making a request of the server
         // console.log(result); // should see objects wrapped in an array
 
         // render the home view with dynamic data
-        res.render('home', { people: result }); //data (people) is just a generic key can be anything
+        res.render('home', { food: result }); //data (food) is just a generic key can be anything
         // { data: result });
     })
 })
@@ -25,7 +25,7 @@ console.log('hit a dynamic route!');
 console.log(req.params.id); // 1, 2 3 or wahtever you want to come after the slash
 
 //added another query
-let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`; //change if needed!!!!!!!!!
+let query = `SELECT * FROM tbl_favthings WHERE ID="${req.params.id}"`; //change if needed!!!!!!!!!
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
@@ -36,7 +36,7 @@ let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`; //change if
         //turn our social property into an array - its just text in the DB
         //which isnt realy anything we can work with
 
-        result[0].social = result[0].social.split(",").map(function(item){
+        result[0].cooktime = result[0].cooktime.split(",").map(function(item){ //change if needed!!!
             item = item.trim(); //remove the extra spaces from each word
 
             return item;
