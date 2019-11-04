@@ -16,7 +16,9 @@ const myVM = (() => {
                 targetImg = lightbox.querySelector('img');
             
                 let bioContent = `
+                <h1>${food.foodName}</h1>
                 <p>${food.ingredients}</p>
+                <h2>${food.calories}</h2>
                 <h4>Cooktime:</h4>
                 ${renderCooktime(food.cooktime)}
                 `;

@@ -15,9 +15,10 @@
 </head>
 
 <body>
-    <div class="hook-content">
-           {{!-- <div id="slider">
 
+    <div class="hook-content">
+
+   {{!-- <div id="moving">   
      <figure>
        <img src="images/burger.jpeg" class="burger" alt="burger">
        <img src="images/lasagna.jpeg" class="lasagna" alt="lasagna">
@@ -27,40 +28,37 @@
 
     <img src="images/burger.jpeg" class="burger" alt="burger">
     <img src="images/foodLogo.svg" class="food-logo" alt="food-logo">
+    <img src="images/navMenu.svg" class="nav-menu" alt="nav-menu">
 
     <div class="headerTitles">
     <h1 class="p-name">Favourite Things</h1>
     <h2 class="subtitle">Personalized Recipes</h2>
+    
     </div>
-
+   
     </div>
-
 
 
     <nav data-module="nav">
         <!-- nav elements must have nav-item -->
-        <ul>
+        {{!-- <ul>
             <li><a href="#" class="nav-item">1</a></li>
             <li><a href="/2" class="nav-item">2</a></li>
             <li><a href="#section3" class="nav-item">3</a></li>
-        </ul>
+        </ul> --}}
     </nav>
+        <div class="arrow-up">        
+
+    </div>
+
 
     <main>
         {{{ body }}}
+        
     </main>
 
-    <footer>
-        <p> derrikxavier © 2019</p>
 
-        <ul>
-            <li><a href="#" class="nav-item">1</a></li>
-            <li><a href="/2" class="nav-item">2</a></li>
-            <li><a href="#section3" class="nav-item">3</a></li>
-        </ul>
-    </footer>
-
-    <a id="to-top" href="#" class="nav-item">back to top</a>
+    
 
     <script type="module" src="js/main.js"></script>
     <script>
@@ -74,14 +72,28 @@ s
         <!-- you can put all kinds of markup here - semantic tagging, etc -->
         <div class="user-panel">
             <div class="user-panel-header">
-                <img class="u-avatar"></img>
+                <img class="u-foodImage"></img>
                 <h1 class="u-name"></h1>
             </div>
 
             <button class="user-button">More Details</button>
         </div>
     </template>
+
+         <a id="to-top" href="#">
+            <img src="images/up-arrow.svg" class="up" alt="up">
+        </a>
     <!-- end templates-->
+       
+        <footer>
+        <p> derrikxavier © 2019</p>
+        
+        {{!-- <ul>
+            <li><a href="#" class="nav-item">1</a></li>
+            <li><a href="/2" class="nav-item">2</a></li>
+            <li><a href="#section3" class="nav-item">3</a></li>
+        </ul> --}}
+    </footer>
 </body>
 
 </html>
