@@ -1,6 +1,8 @@
 
 .hook-content {
     display: flex;
+    -webkit-clip-path: inset(0px round 0px 0px 150px 0px);
+    clip-path: inset(0px round 0px 0px 150px 0px);
 }
 
 .food-logo {
@@ -15,8 +17,7 @@
     display: absolute;
     z-index: -1;
     width: 100%;
-    -webkit-clip-path: inset(0px round 0px 0px 150px 0px);
-    clip-path: inset(0px round 0px 0px 150px 0px);
+    height: 80%;
 }
 
 .headerTitles {
@@ -44,3 +45,84 @@
     font-weight: 200;
     padding: 10px 10px 10px 0px;
 }
+
+.profileImg {
+    // display: flex;
+    position: absolute;
+    width: 55px;
+    right: 0px;
+    bottom: 0;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+
+.nav-menu {
+    right: 0;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
+// moving hookimages
+// #moving {
+//     overflow: hidden;
+//   }
+  
+ 
+//   #moving figure {
+//     position: relative;
+//     width: 500%;
+//     margin: 0;
+//     left: 0;
+//     animation: 15s slider infinite;
+//   }
+  
+//   #moving figure img {
+//     float: left;
+//     width: 20%;
+//     filter: brightness(50%);
+//     margin: 0;
+//     padding: 0;
+//   }
+  
+//   #moving a {
+//     display: table;
+//     margin: 0 auto;
+//     padding: 0;
+//   }
+  
+  //attempting a moving gallery in the hook image
+//   @keyframes moving {
+
+
+//   0% {
+//     left: 0;
+//   }
+
+//   20% {
+//     left: 0;
+//   }
+
+//   25% {
+//     left: -100%;
+//   }
+
+//   45% {
+//     left: -100%;
+//   }
+
+//   50% {
+//     left: -200%;
+//   }
+
+//   70% {
+//     left: -200%;
+//   }
+
+
+// }

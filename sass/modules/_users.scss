@@ -1,15 +1,29 @@
-.team { 
+
+#to-top img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    float: right;
+}
+
+.recipe{ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    .user-panel h1 {
+        font-family: Helvetica, Arial, sans-serif;
+        padding: 15px;
+        color: #2A7A41;
+    }
 
     .user-panel {
         flex: 0 1 200px;
         text-align: center;
         padding: 8px;
 
-        .u-avatar { max-width: 200px; 
+        .u-foodImage { max-width: 200px; 
             -webkit-clip-path: inset(0px round 5px 5px 5px 5px);
             clip-path: inset(0px round 5px 5px 5px 5px);
         
@@ -31,11 +45,11 @@
 }
 
 @media screen and (min-width: 900px) {
-    .team {
+    .recipe {
         .user-panel { 
             flex: 1 1;
 
-            .u-avatar { max-width: 300px; }
+            .u-foodImage { max-width: 300px; }
         }
     }
 }

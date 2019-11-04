@@ -1,4 +1,17 @@
-footer { color: $footer-text-color }
+footer { 
+    color: $footer-text-color;
+    background-color: #2A7A41;
+    height: 100%;
+}
+
+footer p {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
 
 ul {
     margin: 0;

@@ -7,25 +7,24 @@
         Welcome to our awesome team section!
     </h1> --}}
 
-    <p>
 
-    </p>
+    <h4>Check out your favourite food selections.</h4>
 
-    {{!-- <h4>Check out your customized favourite food selection.</h4> --}}
-
-    <div class="team">
-        <!-- loop through all our team members and put their info on the page -->
+    <div class="recipe">
+        <!-- loop through all my foods and put their info on the page -->
         {{#each food}}
+        
         <div class="user-panel">
          <h1>{{ foodName }}</h1>
-        <img class="u-avatar" src="images/{{ foodImage }}" alt="foodImage"> <!--avatar key taken out of data-->
+        <img class="u-foodImage" src="images/{{ foodImage }}" alt="foodImage"> <!--avatar key taken out of data-->
 
         <a class="u-link" href="{{ ID }}">
             Recipe
         </a>
-       
+        
         <h3>{{ cooktime }}</h3>
         </div>
+
         {{/each}}
         
     </div>
@@ -33,14 +32,19 @@
 
     <!-- this will be filled in on the client side when we render our AJAX data -->
     <section class="lightbox">
+
+        
         <span class="close">x</span>
+
         <div class="sidebar">
             <img src="" alt="larger bio image">
-        </div>
-
+         </div>
+        
         <div class="lb-content">
-
         </div>
+
+
+        
     </section>
 </section>
 {{!-- <section id="section4" class="panel">panel 4</section> --}}
