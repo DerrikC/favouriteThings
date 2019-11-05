@@ -38,7 +38,7 @@ const myVM = (() => {
             // debugger;
             //find the image closest to the anchor tag
             let imgSrc = this.previousElementSibling.getAttribute('src');
-            let url =`/${this.getAttribute('href')}`; // /3
+            let url =`/users/${this.getAttribute('href')}`; // /3
 
             fetch(url)// go get data
                 .then(res => res.json()) //parse the json result into a plain object

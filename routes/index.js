@@ -20,7 +20,7 @@ router.get('/', (req, res) => { //res making a request of the server
     })
 })
 
-router.get('/:id', (req, res) => { //( id ) can be named whatever you want
+router.get('/users/:id', (req, res) => { //( id ) can be named whatever you want
 console.log('hit a dynamic route!');
 console.log(req.params.id); // 1, 2 3 or wahtever you want to come after the slash
 
