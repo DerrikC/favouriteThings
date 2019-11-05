@@ -10,7 +10,8 @@
         top: 0;
         z-index: 5000;
         padding: 20px;
-    
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
         background-color: rgba(0, 0,0, 0.85);
     
         h4 {
@@ -73,7 +74,6 @@
 
 }
 
-
 @media (max-width:768px) and (min-width: 501px)  {
     .lightbox { 
         display: none;
@@ -86,7 +86,8 @@
         top: 0;
         z-index: 5000;
         padding: 20px;
-    
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
         background-color: rgba(0, 0,0, 0.85);
     
         h4 {
@@ -161,7 +162,8 @@
             top: 0;
             z-index: 5000;
             padding: 20px;
-        
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
             background-color: rgba(0, 0,0, 0.85);
         
             h4 {
